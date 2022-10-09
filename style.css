@@ -53,7 +53,7 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 5px;
     border-radius: 5px;
     position: relative;
-    background: var(--second-text-color);
+    background: red;
 }
 .slider .progress {
     height: 5px;
