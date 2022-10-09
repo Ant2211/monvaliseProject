@@ -3,11 +3,125 @@
     --background-color: #EFF1F1;
     --first-text-color: #2D3132;
     --second-text-color: #5C5F60;
+    --advertising-background: #CBDCFF;
 
 }
 .general {
     width: 1728px;
     height: 2543px;
+}
+.advertising {
+    font-family:var(--font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #0F1A34;
+    text-decoration: none;
+    background: var(--advertising-background);
+    } 
+    .logo-monvalise {
+        width: 150px;
+        height: 21px;
+        margin: 10px 75px 0 0;
+    }
+    .input-search {
+        width:550px;
+        height: 38px;
+        border-radius: 4px;
+        margin-right: 20px;
+    }
+    .button {
+        width: 129px;
+        height: 38px;
+        border-radius: 4px;
+        background: var(--first-text-color);
+        padding: 10px 20px;
+        margin: 0 20px;
+        
+    }
+    .button-language {
+        font-family:var(--font);
+        text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--first-text-color);
+       margin: 0 10px;
+       background: #FFF;
+        
+    }
+    .icon-form {
+        width: 20px;
+        height: 18px;
+    }
+    .button-icon {
+        margin: 0 10px; 
+        background: #FFF;
+    }
+    .sign-in {
+        width: 32px;
+        height: 32px;
+    }
+    .menu {
+        font-family:var(--font);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: #444748;
+    text-transform: uppercase;
+    }
+   .catalog-branch-active {
+    font-family:var(--font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: #747778;
+    text-decoration: none;
+   }
+   .catalog-branch {
+    font-family:var(--font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--first-text-color);
+   }
+.name-page {
+    font-family:var(--font);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--first-text-color);
+}
+.filters {
+    font-family:var(--font);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--second-text-color);
+}
+.sort {
+    font-family:var(--font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--second-text-color);
+}
+.button-sort {
+    font-family:var(--font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--first-text-color);
+    background: var(--background-color);
 }
 ul {
     list-style: none;
@@ -53,7 +167,7 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 5px;
     border-radius: 5px;
     position: relative;
-    background: red;
+    background: var(--second-text-color);
 }
 .slider .progress {
     height: 5px;
@@ -113,7 +227,7 @@ pointer-events: none;
     color: var(--first-text-color);
     margin: 0 -30px;
 }
-.card-info-secondary {
+.info-secondary {
     font-family:var(--font);
     font-size: 12px;
     font-style: normal;
@@ -126,6 +240,14 @@ pointer-events: none;
 .image-card {
     width: 207px;
     height: 263px;
+}
+.icon-image {
+    position: absolute;
+    right: 16px;
+    top: 18px;
+    width: 20px;
+    height: 16px;
+    
 }
 .pagination-style {
     font-family:var(--font);

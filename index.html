@@ -7,34 +7,101 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/04913b945e.js" crossorigin="anonymous"></script>
     <title>Monvalise</title>
 </head>
 <body>
   <div class="container general">
-   <p class="text-center">
+   <p class="text-center advertising">
     <img src="image/logo-arm.png" alt="logo-arm" />
     <img src="image/logo-dress.png" alt="logo-dress" />
             Брендовий одяг від 899 грн
    </p>
-    <div class="container-fluid">
+    <div class="container-fluid m-3">
           <form class="d-flex">
-            <img src="image/logo-monvalise.png" alt="logo-monvalise" />
-            <input class="input" type="search" placeholder="значок лупи Знайти речі або бренди" aria-label="Search">
-            <button class="btn btn-dark" type="submit">Додати товар</button>
+            <img src="image/logo-monvalise.png" alt="logo-monvalise" class="logo-monvalise"/>
+            <input type="text" class="form-control input-search" placeholder="Знайти речі або бренди" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <button class="btn btn-dark" type="search">Додати товар</button>
+            <div class="btn-group button-language">
+              <button type="button" class="btn me-0 pe-0">укр</button>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split ms-0 ps-0" data-bs-toggle="dropdown" aria-expanded="false">
+               
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">eng</a></li>
+                <li><a class="dropdown-item" href="#">fr</a></li>
+                </ul>
+            </div>
+          <button type="button" class="btn position-relative"> 
+            <i class="fa-regular fa-heart icon-form"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-light">
+              8
+              <span class="visually-hidden">favorite</span>
+            </span>
+          </button>
+          <button type="button" class="btn position-relative button-icon">
+            <img src="image/vector.png" class="icon-form" />
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              3
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+          <button type="button" class="btn position-relative">
+            <img src="image/basket.png" class="icon-form" />
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-light">
+              3
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+          <div class="btn-group mx-3">
+            <button type="button" class="btn me-0 sign-in"><img src="image/avatar-Brandear.png" /> </button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split ms-0" data-bs-toggle="dropdown" aria-expanded="false">
+             
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">...</a></li>
+              <li><a class="dropdown-item" href="#">... </a></li>
+              </ul>
+          </div>
           </form>
-        </div>
+          <hr />
+        
         <nav class="nav d-flex justify-content-between">
-        <a class="nav-link active" aria-current="page" href="#">головна</a>
-        <a class="nav-link" href="#">каталог</a>
-        <a class="nav-link" href="#">жінкам</a>
-        <a class="nav-link" href="#">чоловікам</a>
-        <a class="nav-link" href="#">дитячі речі</a>
-        <a class="nav-link" href="#">аукціон</a>
-        <a class="nav-link" href="#">бренди</a>
-        <a class="nav-link" href="#">акції</a>
-        <a class="nav-link" href="#">аутентифікація</a>
-        <a class="nav-link " href="#">блог</a>
+        <a class="nav-link menu active" aria-current="page" href="#">головна</a>
+        <a class="nav-link menu" href="#">каталог</a>
+        <a class="nav-link menu" href="#">жінкам</a>
+        <a class="nav-link menu" href="#">чоловікам</a>
+        <a class="nav-link menu" href="#">дитячі речі</a>
+        <a class="nav-link menu" href="#">аукціон</a>
+        <a class="nav-link menu" href="#">бренди</a>
+        <a class="nav-link menu" href="#">акції</a>
+        <a class="nav-link menu" href="#">аутентифікація</a>
+        <a class="nav-link menu" href="#">блог</a>
         </nav>
+        <hr />
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="catalog-branch-active" href="#">Головна</a></li>
+            <li class="breadcrumb-item active catalog-branch mt-1" aria-current="page">Каталог одягу</li>
+          </ol>
+        </nav>
+        <p class="name-page"> Каталог одягу </p>
+                <div class="container d-flex justify-content-between m-0">
+  <div class="filters">Фільтри</div>
+
+  <span class="sort">Сортувати за: 
+    <button type="button" class="btn button-sort">за замовчуванням </button>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+               
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">...</a></li>
+                <li><a class="dropdown-item" href="#">...</a></li>
+                </ul>
+  
+              </span>
+        </div>
+        
      
      
        <div class="container d-flex justify-content-between">
@@ -70,8 +137,8 @@
                             </div>
                             </div>
                             <div class="range-input">
-                              <input type="range" class="range-min" min="0" max="500000" value="980" step="5" />
-                              <input type="range" class="range-max" min="0" max="500000" value="20465" step="5" />
+                              <input type="range" class="range-min" min="0" max="50000" value="980" step="1" />
+                              <input type="range" class="range-max" min="0" max="50000" value="20465" step="1" />
                             </div>
                          <div class="price-input">
                             <div class="field">
@@ -216,6 +283,7 @@
                                 <div class="col-lg-3">
                                   <div class="card mt-3 mb-3 card-size">
                         <a href="#"><img src="image/1.png" class="card-img-top img-fluid m-3 image-card" alt="..."></a>
+                        <i class="fa-regular fa-heart icon-image"></i> 
                         <div class="card-body">
                           <h6 class="small-style-text mt-3">
                             LOUIS VUITTON </h6>
@@ -225,13 +293,13 @@
                             <div class="row d-flex justify-content-between mt-4">
                               <div class="col-lg-6">
                                 <ul>
-                                  <li class="card-info-secondary"><s>5 499</s></li>
+                                  <li class="info-secondary"><s>5 499</s></li>
                                   <li class="card-info">3 799</li>
                                 </ul>
                               </div>
                               <div class="col-lg-6">
                                 <ul>
-                                  <li class="card-info-secondary"><img src="image/Subtract.png" alt="" /> Херсон</li>
+                                  <li class="info-secondary"><img src="image/Subtract.png" alt="" /> Херсон</li>
                                   <li class="card-info"><img src="image/avatar-LB.png" alt="" /> LoveBrand </li>
                                 </ul>
                               </div>
@@ -241,6 +309,7 @@
                       </div>
                       <div class="card mt-3 mb-3 card-size">
                         <a href="#"><img src="image/4.png" class="card-img-top img-fluid m-3 image-card" alt="..."></a>
+                        <i class="fa-regular fa-heart icon-image"></i>
                         <div class="card-body">
                           <h6 class="small-style-text mt-3">
                             LOUIS VUITTON </h6>
@@ -250,13 +319,13 @@
                             <div class="row d-flex justify-content-between mt-4">
                               <div class="col-lg-6">
                                 <ul>
-                                  <li class="card-info-secondary"><s>4 999</s></li>
+                                  <li class="info-secondary"><s>4 999</s></li>
                                   <li class="card-info">3 499</li>
                                 </ul>
                               </div>
                               <div class="col-lg-6">
                                 <ul>
-                                  <li class="card-info-secondary"><img src="image/Subtract.png" alt="" /> Дніпро </li>
+                                  <li class="info-secondary"><img src="image/Subtract.png" alt="" /> Дніпро </li>
                                   <li class="card-info"><img src="image/avatar-Brandear.png" alt="" /> Brandear </li>
                                 </ul>
                               </div>
@@ -266,6 +335,7 @@
                       </div>
                       <div class="card mt-3 mb-3 card-size">
                         <a href="#"><img src="image/7.png" class="card-img-top img-fluid m-4 image-card" alt="..."></a>
+                        <i class="fa-regular fa-heart icon-image"></i>
                         <div class="card-body">
                           <h6 class="small-style-text mt-3">
                             GUCCI </h6>
@@ -275,13 +345,13 @@
                             <div class="row d-flex justify-content-between mt-4">
                               <div class="col-lg-6">
                                 <ul>
-                                  <li class="card-info-secondary"><s>11 999</s></li>
+                                  <li class="info-secondary"><s>11 999</s></li>
                                   <li class="card-info">8 599</li>
                                 </ul>
                               </div>
                               <div class="col-lg-6">
                                 <ul>
-                                  <li class="card-info-secondary"><img src="image/Subtract.png" alt="" /> Рівне</li>
+                                  <li class="info-secondary"><img src="image/Subtract.png" alt="" /> Рівне</li>
                                   <li class="card-info"><img src="image/avatar-SellBuy.png" alt="" /> SellBuy </li>
                                 </ul>
                               </div>
@@ -294,6 +364,7 @@
                     <div class="col-3">
                       <div class="card mt-3 mb-3 card-size">
                         <a href="#"><img src="image/2.png" class="card-img-top img-fluid m-3 image-card" alt="..."></a>
+                        <i class="fa-regular fa-heart icon-image"></i>
                         <div class="card-body">
                           <h6 class="small-style-text mt-3">
                             THOM BROWNE </h6>
@@ -303,13 +374,13 @@
                             <div class="row d-flex justify-content-between mt-4">
                               <div class="col-lg-6">
                                 <ul>
-                                  <li class="card-info-secondary"><s>11 999</s></li>
+                                  <li class="info-secondary"><s>11 999</s></li>
                                   <li class="card-info">8 599</li>
                                 </ul>
                               </div>
                               <div class="col-lg-6">
                                 <ul>
-                                  <li class="card-info-secondary"><img src="image/Subtract.png" alt="" /> Хмельницький</li>
+                                  <li class="info-secondary"><img src="image/Subtract.png" alt="" /> Хмельницький</li>
                                   <li class="card-info"><img src="image/avatar-Sell_For_Men.png" alt="" /> Sell_For_Men </li>
                                 </ul>
                               </div>
@@ -319,6 +390,7 @@
                       </div>
                       <div class="card mt-3 mb-3 card-size">
                         <a href="#"><img src="image/5.png" class="card-img-top img-fluid m-3 image-card" alt="..."></a>
+                        <i class="fa-regular fa-heart icon-image"></i>
                         <div class="card-body">
                           <h6 class="small-style-text mt-3">
                             ELENA GHISELINI </h6>
@@ -328,13 +400,13 @@
                             <div class="row d-flex justify-content-between mt-4">
                               <div class="col-lg-6">
                                 <ul>
-                                  <li class="card-info-secondary"><s>1 999</s></li>
+                                  <li class="info-secondary"><s>1 999</s></li>
                                   <li class="card-info">1 599</li>
                                 </ul>
                               </div>
                               <div class="col-lg-6">
                                 <ul>
-                                  <li class="card-info-secondary"><img src="image/Subtract.png" alt="" /> Дніпро </li>
+                                  <li class="info-secondary"><img src="image/Subtract.png" alt="" /> Дніпро </li>
                                   <li class="card-info"><img src="image/avatar-Brandear.png" alt="" /> Brandear </li>
                                 </ul>
                               </div>
@@ -344,6 +416,7 @@
                         </div>
                         <div class="card mt-3 mb-3 card-size">
                           <a href="#"><img src="image/8.png" class="card-img-top img-fluid m-3 image-card" alt="..."></a>
+                          <i class="fa-regular fa-heart icon-image"></i>
                           <div class="card-body">
                             <h6 class="small-style-text mt-3">
                               CHANEL </h6>
@@ -353,13 +426,13 @@
                               <div class="row d-flex justify-content-between mt-4">
                                 <div class="col-lg-6">
                                   <ul>
-                                    <li class="card-info-secondary"><s>5 999</s></li>
+                                    <li class="info-secondary"><s>5 999</s></li>
                                     <li class="card-info">4 199</li>
                                   </ul>
                                 </div>
                                 <div class="col-lg-6">
                                   <ul>
-                                    <li class="card-info-secondary"><img src="image/Subtract.png" alt="" /> Кропивницький </li>
+                                    <li class="info-secondary"><img src="image/Subtract.png" alt="" /> Кропивницький </li>
                                     <li class="card-info"><img src="image/avatar-Deeva_Sofia.png" alt="" /> Deeva_Sofia </li>
                                   </ul>
                                 </div>
@@ -372,6 +445,7 @@
                       <div class="col-3">
                         <div class="card mt-3 mb-3 card-size">
                           <a href="#"><img src="image/3.png" class="card-img-top img-fluid m-3 image-card" alt="..."></a>
+                          <i class="fa-regular fa-heart icon-image"></i>
                           <div class="card-body">
                             <h6 class="small-style-text mt-3">
                               CANALI </h6>
@@ -381,13 +455,13 @@
                               <div class="row d-flex justify-content-between mt-4">
                                 <div class="col-lg-6">
                                   <ul>
-                                    <li class="card-info-secondary"><s>4 999</s></li>
+                                    <li class="info-secondary"><s>4 999</s></li>
                                     <li class="card-info">2 599</li>
                                   </ul>
                                 </div>
                                 <div class="col-lg-6">
                                   <ul>
-                                    <li class="card-info-secondary"><img src="image/Subtract.png" alt="" /> Хмельницький</li>
+                                    <li class="info-secondary"><img src="image/Subtract.png" alt="" /> Хмельницький</li>
                                     <li class="card-info"><img src="image/avatar-Sell_For_Men.png" alt="" /> Sell_For_Men </li>
                                   </ul>
                                 </div>
@@ -397,6 +471,7 @@
                         </div>
                         <div class="card mt-3 mb-3 card-size">
                           <a href="#"><img src="image/6.png" class="card-img-top img-fluid m-3 image-card" alt="..."></a>
+                          <i class="fa-regular fa-heart icon-image"></i>
                           <div class="card-body">
                             <h6 class="small-style-text mt-3">
                               ACNE </h6>
@@ -406,13 +481,13 @@
                               <div class="row d-flex justify-content-between mt-4">
                                 <div class="col-lg-6">
                                   <ul>
-                                    <li class="card-info-secondary"><s>5 999</s></li>
+                                    <li class="info-secondary"><s>5 999</s></li>
                                     <li class="card-info">4 199</li>
                                   </ul>
                                 </div>
                                 <div class="col-lg-6">
                                   <ul>
-                                    <li class="card-info-secondary"><img src="image/Subtract.png" alt="" /> Київ</li>
+                                    <li class="info-secondary"><img src="image/Subtract.png" alt="" /> Київ</li>
                                     <li class="card-info"><img src="image/avatar-Alexalex.png" alt="" /> Alexalex </li>
                                   </ul>
                                 </div>
@@ -422,6 +497,7 @@
                         </div>
                         <div class="card mt-3 mb-3 card-size">
                           <a href="#"><img src="image/9.png" class="card-img-top img-fluid m-3 image-card" alt="..."></a>
+                          <i class="fa-regular fa-heart icon-image"></i>
                           <div class="card-body">
                             <h6 class="small-style-text mt-3">
                               HACHE </h6>
@@ -431,13 +507,13 @@
                               <div class="row d-flex justify-content-between mt-4">
                                 <div class="col-lg-6">
                                   <ul>
-                                    <li class="card-info-secondary"><s>5 999</s></li>
+                                    <li class="info-secondary"><s>5 999</s></li>
                                     <li class="card-info">4 199</li>
                                   </ul>
                                 </div>
                                 <div class="col-lg-6">
                                   <ul>
-                                    <li class="card-info-secondary"><img src="image/Subtract.png" alt="" /> Київ</li>
+                                    <li class="info-secondary"><img src="image/Subtract.png" alt="" /> Київ</li>
                                     <li class="card-info"><img src="image/avatar-LB.png" alt="" /> LoveBrand </li>
                                   </ul>
                                 </div>
@@ -466,6 +542,7 @@
       </li>
     </ul>
   </nav>
+</div>
   <div class="bottom-page">
 <div class="row my-5 pt-5">
     <div class="col-lg-3"> 

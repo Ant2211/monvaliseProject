@@ -8,7 +8,7 @@ const rangeInput = document.querySelectorAll(".range-input input"),
     input.addEventListener("input", e => {
         let minVal = parseInt(priceInput[0].value);
         let maxVal = parseInt(priceInput[1].value);
-        if((maxVal - minVal >= priceGap) &&  maxVal <= 100000){
+        if((maxVal - minVal >= priceGap) &&  maxVal <= 50000){
 if(e.target.className === "input-min"){
     rangeInput[0].value = minVal;
     progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
